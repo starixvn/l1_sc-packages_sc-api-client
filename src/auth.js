@@ -1,4 +1,4 @@
-const { createAction } = require("./util");
+import { createAction } from "./util";
 
 const metadata = [
     {
@@ -11,4 +11,4 @@ const metadata = [
     },
 ];
 
-module.exports = (config) => createAction(metadata, config);
+export default (configs) => createAction(metadata, configs);

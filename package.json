@@ -1,24 +1,22 @@
 {
     "name": "sc-api-client",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": "src/index.js",
     "author": {
-        "email": "harrison.nguyen@luminetsoft.com",
-        "name": "harrison.nguyen"
+        "email": "pentagon@luminetsoft.com",
+        "name": "pentagon"
     },
     "scripts": {
-        "dev": "nodemon demo",
         "reg": "npm set registry http://npm.lumigame.com",
         "ver": "npm version minor",
+        "betaver": "npm version preminor --preid beta",
         "pub": "npm publish --registry http://npm.lumigame.com",
+        "pubbeta": "npm publish --registry http://npm.lumigame.com --tag beta",
         "unpublish": "npm unpublish --force sc-api-client"
     },
-    "description": "",
-    "devDependencies": {
-        "nodemon": "^2.0.2"
-    },
+    "description": "Saba API client for Node.js apps",
     "dependencies": {
         "axios": "^0.19.2",
-        "openid-client": "^3.14.0"
+        "openid-client": "^3.15.9"
     }
 }
