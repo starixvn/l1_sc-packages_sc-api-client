@@ -2,7 +2,7 @@ import Axios from "axios";
 
 const defaultTimeout = 2500; // ms
 
-const sendPostRequest = (action, configs) => (params, options) => {
+const sendPostRequest = (action, configs) => async (params, options) => {
     const { apiUrl, token, useAuthenticate, requestTimeout } = configs;
     const requestConfigs = {
         timeout: options?.requestTimeout || requestTimeout || defaultTimeout,
@@ -18,7 +18,7 @@ const sendPostRequest = (action, configs) => (params, options) => {
         requestConfigs.headers.Authorization = token;
     }
 
-    return Axios.post(`${apiUrl}${action}`, params, requestConfigs);
+    return (await Axios.post(`${apiUrl}${action}`, params, requestConfigs)).data;
 };
 
 const createAction = (metadata, configs) =>
