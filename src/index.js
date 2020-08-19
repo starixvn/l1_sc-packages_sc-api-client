@@ -18,15 +18,16 @@ export default class APIClient {
     }
 
     async autoUpdateToken() {
-        await this.updateToken();
-
-        setTimeout(async function refresh() {
+        const refresh = async () => {
             if (this.isTokenExpired()) {
                 await this.updateToken();
             }
 
             setTimeout(refresh, timeout);
-        }, timeout);
+        };
+
+        await this.updateToken();
+        setTimeout(refresh, timeout);
     }
 
     isTokenExpired() {
