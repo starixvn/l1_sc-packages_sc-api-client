@@ -1,9 +1,11 @@
-import { Issuer, custom } from "openid-client";
+import OpenIdClient from "openid-client";
+
 import initAuth from "./auth";
 import initMember from "./member";
 
 const beforeTokenExpired = 60 * 5;
 const timeout = 60000;
+const { Issuer, custom } = OpenIdClient;
 
 custom.setHttpOptionsDefaults({ timeout });
 
@@ -38,9 +40,9 @@ export default class APIClient {
             this.configs.token = token.token;
             this.configs.expired = token.expired;
 
-            logger.log("Get bearer token successfully.");
+            this.logger.log("Get bearer token successfully.");
         } catch (error) {
-            logger.logError(`Get bearer token failed: ${error}`);
+            this.logger.logError(`Get bearer token failed: ${error}`);
         }
     }
 
