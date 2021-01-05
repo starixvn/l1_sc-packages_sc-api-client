@@ -25,6 +25,10 @@ const metadata = [
         action: "/Member/EnterPortal",
         name: "enterPortal",
     },
+    {
+        action: "/Member/HitJackpot",
+        name: "hitJackpot",
+    },
 ];
 
 export default (configs) => createAction(metadata, configs);
