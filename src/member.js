@@ -29,6 +29,10 @@ const metadata = [
         action: "/Member/HitJackpot",
         name: "hitJackpot",
     },
+    {
+        action: "/Member/GetBetLimit",
+        name: "getBetLimit",
+    },
 ];
 
 export default (configs) => createAction(metadata, configs);
