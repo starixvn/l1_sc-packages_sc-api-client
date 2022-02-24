@@ -1,7 +1,7 @@
 import OpenIdClient from "openid-client";
 
 import initAuth from "./auth";
-import initMember from "./member";
+import initPlayer from "./player";
 
 const beforeTokenExpired = 60 * 5;
 const timeout = 60000;
@@ -14,7 +14,7 @@ export default class APIClient {
         this.configs = configs;
         this.logger = logger;
         this.auth = initAuth(this.configs);
-        this.member = initMember(this.configs);
+        this.player = initPlayer(this.configs);
     }
 
     async autoUpdateToken() {

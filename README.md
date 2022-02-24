@@ -34,8 +34,8 @@ const apiClient = new APIClient(settings, logger);
 - Use APIClient's methods instead of
 
 ```js
-const balance = await apiClient.member.balance(getBalanceParams);
-const placingBetResult = await apiClient.member.placeBet(placeBetParams, {
+const balance = await apiClient.player.balance(getBalanceParams);
+const placingBetResult = await apiClient.player.placeBet(placeBetParams, {
   requestTimeout: apiSettings.placeBetTimeout,
 });
 //...

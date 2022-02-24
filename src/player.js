@@ -2,35 +2,35 @@ import { createAction } from "./util";
 
 const metadata = [
     {
-        action: "/Member/EnterPortal",
+        action: "/Player/EnterPortal",
         name: "notifyLogin",
     },
     {
-        action: "/Member/Balance",
+        action: "/Player/Balance",
         name: "balance",
     },
     {
-        action: "/Member/PlaceBet",
+        action: "/Player/PlaceBet",
         name: "placeBet",
     },
     {
-        action: "/Member/EndGame",
+        action: "/Player/EndGame",
         name: "endGame",
     },
     {
-        action: "/Member/VoidGame",
+        action: "/Player/VoidGame",
         name: "voidGame",
     },
     {
-        action: "/Member/EnterPortal",
+        action: "/Player/EnterPortal",
         name: "enterPortal",
     },
     {
-        action: "/Member/HitJackpot",
+        action: "/Player/HitJackpot",
         name: "hitJackpot",
     },
     {
-        action: "/Member/GetBetLimit",
+        action: "/Player/GetBetLimit",
         name: "getBetLimit",
     },
 ];
