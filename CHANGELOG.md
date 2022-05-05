@@ -1,3 +1,10 @@
+## [1.3.1](https://git3.nexdev.net/l1/sc-packages/sc-api-client/compare/v1.3.0...v1.3.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* update terms ([a12dddc](https://git3.nexdev.net/l1/sc-packages/sc-api-client/commit/a12dddc9bf0df298223e098fa43d3a2a7e2e044e))
+
 # [1.3.0](https://git3.nexdev.net/sc-packages/sc-api-client/compare/v1.2.0...v1.3.0) (2021-04-06)
 
 
