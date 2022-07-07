@@ -3,7 +3,7 @@ import Axios from "axios";
 const defaultTimeout = 2500; // ms
 
 const sendPostRequest = (action, configs) => async (params, options) => {
-    const { apiUrl, token, useAuthenticate, requestTimeout } = configs;
+    const { apiUrl, requestTimeout } = configs;
     const requestConfigs = {
         timeout: options?.requestTimeout || requestTimeout || defaultTimeout,
         headers: {},
@@ -12,10 +12,6 @@ const sendPostRequest = (action, configs) => async (params, options) => {
     if (params?.languageCode) {
         requestConfigs.headers.LanguageCode = params.languageCode;
         delete params.languageCode;
-    }
-
-    if (useAuthenticate) {
-        requestConfigs.headers.Authorization = token;
     }
 
     return (await Axios.post(`${apiUrl}${action}`, params, requestConfigs)).data;
