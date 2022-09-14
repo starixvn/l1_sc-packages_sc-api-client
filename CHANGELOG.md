@@ -1,3 +1,10 @@
+# [1.4.0](https://git3.nexdev.net/l1/sc-packages/sc-api-client/compare/v1.3.1...v1.4.0) (2022-09-14)
+
+
+### Features
+
+* remove getting bearer token from Identity server ([325f419](https://git3.nexdev.net/l1/sc-packages/sc-api-client/commit/325f419164e8d570e27b8fc3694c1da722fbb625))
+
 ## [1.3.1](https://git3.nexdev.net/l1/sc-packages/sc-api-client/compare/v1.3.0...v1.3.1) (2022-05-05)
 
 
