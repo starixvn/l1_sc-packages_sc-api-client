@@ -1,3 +1,10 @@
+# [1.5.0](https://git3.nexdev.net/l1/sc-packages/sc-api-client/compare/v1.4.0...v1.5.0) (2025-08-22)
+
+
+### Features
+
+* add award api ([b1b4ffb](https://git3.nexdev.net/l1/sc-packages/sc-api-client/commit/b1b4ffba1d9086dd0abe29c6de58d05c0391c47e))
+
 # [1.4.0](https://git3.nexdev.net/l1/sc-packages/sc-api-client/compare/v1.3.1...v1.4.0) (2022-09-14)
 
 
